@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi Libro Mágico</title>
+
+<!-- FUENTES MÁGICAS -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background: radial-gradient(circle, #1a1a1a, #000);
+  color: #f5e6c8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* CONTENEDOR DEL LIBRO */
+.libro {
+  width: 800px;
+  height: 600px;
+  background: linear-gradient(145deg, #5a3b1e, #3a2512);
+  border-radius: 10px;
+  box-shadow: 
+    inset 0 0 20px #000,
+    0 0 40px rgba(0,0,0,0.8);
+  padding: 30px;
+  border: 3px solid #8b6a3f;
+  position: relative;
+}
+
+/* BORDE DECORATIVO */
+.libro::before {
+  content: "";
+  position: fixed;
+  top: 10px; left: 10px;
+  right: 10px; bottom: 10px;
+  border: 2px solid rgba(255,215,0,0.3);
+  pointer-events: none;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+  font-family: 'Uncial Antiqua', cursive;
+  margin-bottom: 20px;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255,215,0,0.6);
+}
+
+/* SUBTÍTULOS */
+h2 {
+  font-family: 'Uncial Antiqua', cursive;
+  color: #ffcc66;
+}
+
+/* TEXTO */
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+/* PÁGINAS */
+.pagina {
+  display: none;
+}
+
+.activa {
+  display: block;
+  animation: aparecer 2s;
+}
+
+/* BOTONES */
+.botones {
+  margin-top: 20px;
+}
+
+button {
+  background: #3a2512;
+  border: 2px solid #8b6a3f;
+  color: #f5e6c8;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Cinzel', serif;
+}
+
+button:hover {
+  background: #5a3b1e;
+  transform: scale(1.05);
+}
+
+/* ANIMACIÓN */
+@keyframes aparecer {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<h1>LA HISTORIA DE UNA PRINCESA Y SU CUMPLEAÑOS</h1>
+
+<div class="libro">
+
+  <div class="pagina activa">
+    <h2>ERASE UNA VEZ...</h2>
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image.png" 
+style="width:300px; border-radius:10px; border:2px solid #8b6a3f; display:block; margin:auto;">
+    <p>En el planeta Tierra, vivía una princesa en un mundo mágico al estilo de Harry Potter pero mejor, 
+       una princesa cuyo nombre era percibido por los Griegos como la "coronada", ¿Qué? ¿Aún no sabes su nombre?
+       Bueno, su nombre era Estefanía Pinchao, era fuerte, audaz, decidida de si misma, y sobre todo, era hermosa
+       cualquier persona que la miraba quedaba pasmado de asombro al verla. Pero hubo un día donde la princesa se encontraba
+       en problemas, problemas Demasiado Grandes, y claro; su cabecita no podía procesarlo y quedó estancada 
+       sin poder solucionarlo...
+    </p>
+    
+  </div>
+
+  <div class="pagina">
+    <h2>LA PRINCESA NO PUEDE SOLUCIONAR</h2>
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image2.png" 
+style="width:300px; border-radius:10px; border:2px solid #8b6a3f; display:block; margin:auto;">    
+    <p>La aldea en donde vivía con sus hermanas y su madre, incluso sus abuelitos, todos estaban tan preocupados que no sabian
+       como podrían ayudarla, pero ¿porqué tanto misterio? ¿qué es lo que no puede resolver la princesa? ¿qué es lo que la tiene
+       tan angustiada?, pues precisamente era que no sabia que día era, y lo que ella no sabía era que justamente hoy era su cumpleaños
+       y todos a su alrededor lo sabían, pero no querían arruinarle o decirle, ya que al decirle le arruinarían la sorpresa que habían
+       hecho para ella. y al no saber la princesa porque este día era tan importantes para todos, ella no podía comprenderlo de la misma manera,
+       entonces se frutró y se fue al balcón de su castillo por horas.
+
+    </p>
+  </div>
+
+  <div class="pagina">
+    <h2>POR OTRO LADO</h2>
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image3.png" 
+style="width:300px; border-radius:10px; border:2px solid #8b6a3f; display:block; margin:auto;">        
+    <p>En el otro extremo de la región, existía un chico que trabajaba en el campo labrando junto a su familia, como era una región de frío en su mayoria 
+       se dedicaba al cultivo de papas y cría de conejos, bueno; resulta que un día este joven campesino tuvo que ir al centro de la región; lugar donde 
+       se encontraba el mercado central, y aquí era el punto de venta de artículos como ropa, comida, gemas, joyas e incluso armas. Pues bien, este muchacho
+       tenía que ir allí a vender sus productos, durante su viaje debía de cruzar por montañas y relieves super grandes, lo cual pues tomaría días. Pero este viaje
+       no solo era para vender sus productos, sino también para ir a dar una flor super legendaria a la princesa, como muestra de amor hacia ella y al mismo tiempo 
+       declararle su amor sincero.
+
+    </p>
+  </div>
+
+  <div class="pagina">
+    <h2>DURANTE DÍAS</h2>
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image4.png" 
+style="width:300px; border-radius:10px; border:2px solid #8b6a3f; display:block; margin:auto;">    
+    <p>Finalmente el joven acabó su travesía que le había llevado casi una semana para poder llegar a la capital central, una vez que llegó al sitio decidió vender
+       sus productos y posterior a ello, poder darle el regalo que llevó durante días en su mochila, y por increíble que parezca, la flor aún estaba intacta, como 
+       si sus raíces aun estuvieran en la tierra plantadas sobre la húmeda tierra fértil una vez plantada. 
+    </p>
+  </div>
+
+  <div class="pagina">
+    <h2>IDEANDO UN PLAN</h2>
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image5.png" 
+style="width:300px; border-radius:10px; border:2px solid #8b6a3f; display:block; margin:auto;">        
+    <p>Al acabar de vender en el mercado, cayó la noche, y junto a las estrellas que lo acompañaban decidió visitar a la princesa en su castillo, pero había un pequeño
+       detalle, por no decir que era tan grande que solo tenía una oportunidad, era escabullirse al balcón de la habitación de la princesa sin ser visto por los guardias
+       ya que de ser visto, sería ejecutado y no cumpliría con su misión. Decidido el joven, realizó un plan y le resultaría fácil posteriormente ya que debido a que la 
+       princesa estaba frustrada en ese momento, todos estaban dentro del castillo ideando un plan para que la princesa se mejorara y más aún en su cumpleaños. 
+
+    </p>
+  </div>
+
+  <div class="pagina">
+    <h2>UN ENCUENTRO INESPERADO</h2>
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image5.png" 
+style="width:300px; border-radius:10px; border:2px solid #8b6a3f; display:block; margin:auto;">            
+    <p>Una vez ingresado al castillo, miró a lo lejos a la princesa llorando en su balcón, el joven decidió ir a donde ella estaba sin que los guardias lo encontraran,
+       una vez en el bastión procedió a subir por la torre más alta para poder llegar finalmente a donde estaba Estefanía. Llegó el momento...solo ella y él joven, y aquí
+       empezaron a hablar:
+    </p>
+  </div>
+
+  <div class="pagina">
+    <h2>HOLA MI AMOR SOY ALDAIR</h2>
+    <p>Estefanía, hola soy Aldair, el joven campesino, viaje durante montañas y ríos para poder decirte esto, desde el primer día en que te conocí me enamoré a primera vista 
+       de tí, tu cabello, tu piel, tus ojos, tu forma de ser, me encanta tus bromas, tus sueños, cuando hablas de cualqueir cosa, me gusta cuando te emocionas por pequeñas cosas,
+       me encanta cuando sonríes, cuando estas conmigo en toda forma, me encanta todo de tí, disfruto la compañía que me brindas, todo lo que has hecho por mí, los regalos, las salidas,
+       las citas, me enamoré de tí porque sé que eres y descubrí que eres una persona, una chica y una niña muy especial, de esas que solo existen en los cuentos de hadas, por eso,
+       este cuento es para tí, porque eres mi mundo entero, mi niña y mi princesita hermosa que amo y no hay día que no deje de enamorarme de esa chica que está conmigo.
+       Y BIEN, TE DESEO UN CUMPLEAÑOS FELIZ PARA TÍ, MI PRINCESITA DE LOS CUENTOS, ESTEFANÍA TE AMO MUCHO Y ESPERO HAYAS DISFRUTADO ESTE CUENTO. </p>
+  </div>
+
+  <div class="pagina">
+    <h2>FELIZ CUMPLEAÑOS MI AMORCITO</h2>
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image6.png" 
+style="width:200px; border-radius:10px; border:2px solid #8b6a3f;">
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image7.png" 
+style="width:200px; border-radius:10px; border:2px solid #8b6a3f;">
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image8.png" 
+style="width:200px; border-radius:10px; border:2px solid #8b6a3f;">
+    <p></p>
+
+  </div>
+
+  <div class="pagina">
+    <h2>FELICIDADES MI PRINCESITA HERMOSA</h2>
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image9.png" 
+style="width:200px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image10.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image11.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image12.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image13.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image14.png" 
+style="width:200px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image15.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image16.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image17.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image18.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image19.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">  
+
+
+    <p></p>
+  </div>
+
+  <div class="pagina">
+    <h2>TE AMO MUCHO MUCHO MUCHO</h2>
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image20.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image21.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;"> 
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image22.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image23.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;"> 
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image24.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image25.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;"> 
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image26.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image27.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;"> 
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image28.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;"> 
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image29.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;">
+
+<img src="file:///C:/Users/Asus/Desktop/PRUEBA/imagen/image30.png" 
+style="width:100px; border-radius:10px; border:2px solid #8b6a3f;"> 
+    <p></p>
+  </div>
+
+</div>
+
+<div class="botones">
+  <button onclick="anterior()">⬅ Anterior</button>
+  <button onclick="siguiente()">Siguiente ➡</button>
+</div>
+
+<script>
+let paginaActual = 0;
+const paginas = document.querySelectorAll(".pagina");
+
+function mostrarPagina(index) {
+  paginas.forEach(p => p.classList.remove("activa"));
+  paginas[index].classList.add("activa");
+}
+
+function siguiente() {
+  if (paginaActual < paginas.length - 1) {
+    paginaActual++;
+    mostrarPagina(paginaActual);
+  }
+}
+
+function anterior() {
+  if (paginaActual > 0) {
+    paginaActual--;
+    mostrarPagina(paginaActual);
+  }
+}
+</script>
+
+</body>
+</html>
